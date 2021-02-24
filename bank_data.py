@@ -1,3 +1,4 @@
+#! /usr/bin/python3.8.7
 import json
 from typing import Dict
 
@@ -21,13 +22,7 @@ def extract_bank_data_from_csv(csv_file, bank: str = "Norisbank", sort_by_date: 
     if bank not in CONFIG:
         raise AttributeError(f"Until now there is no config for Bank: {bank}")
 
-    # options = {"engine": 'python', "delimiter": ";", "encoding": 'ISO-8859-1'}
-
-    # skiprows, nrows = load_bank_config(bank)
     options = CONFIG[bank]["options"]
-    # print(options)
-    # options["skiprows"] = skiprows if skiprows else None
-    # options["nrows"] = nrows if nrows else None
 
     bank_df = pd.read_csv(csv_file, **options).iloc[::-1]
 
