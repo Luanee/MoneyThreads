@@ -1,3 +1,6 @@
 # python cache
 *.py[oc]
 __pycache__/
+
+# python virtual enviroment
+venv/
