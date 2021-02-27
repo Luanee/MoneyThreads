@@ -77,7 +77,7 @@ TEMPLATE_DIRS = (
 LANGUAGE_CODE = 'de-DE'
 LANGUAGES = (
     'DE', gettext_noop('Deutschland'),
-    'GB', gettext_noop('Great Britain'),
+    'GB', gettext_noop('United Kingdom'),
 )
 
 TIME_ZONE = 'Europe/Berlin'
