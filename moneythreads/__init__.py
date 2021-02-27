@@ -1,5 +1,0 @@
-__version__ = "0.0.1"
-__name__ = "MoneyThreads"
-__url__ = "https://github.com/Luanee/MoneyThreads"
-__author__ = "Pit Nahrstedt"
-__email__ = "pit_nahrstedt@web.de"
