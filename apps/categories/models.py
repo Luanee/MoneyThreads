@@ -10,7 +10,8 @@ class Category(models.Model):
         (EXPENSES, 'expenses'),
         (SAVINGS, 'savings'),
     ]
-    name = models.CharField(max_length=50)
-    amount = models.FloatField(default=0)
-    type = models.CharField(max_length=8, choices=CATEGORY_TYPES, default=INCOME)
+    name = models.CharField(max_length=50, default="Category name")
     main_category = models.CharField(max_length=50)
+    type = models.CharField(max_length=8, choices=CATEGORY_TYPES, default=INCOME)
+    amount = models.FloatField(default=0)
+    symbol = models.CharField(max_length=10, default="Symbol")
